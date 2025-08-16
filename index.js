@@ -15,4 +15,5 @@ readdirSync('./src/utils').map(async file => {
 	util.execute(client);
 });
 
-client.login(token);
+client.login(process.env.token);
+
